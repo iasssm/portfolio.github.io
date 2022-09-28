@@ -889,6 +889,23 @@ footer {
   }
 }
 @media (max-width: 378px) {
+  .section-title-01 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.1;
+    text-align: center;
+  }
+  .section-title-02 {
+    font-size: 1.5rem;
+    transform: translateY(-80px);
+    text-align: center;
+    color: #264143;
+  }
+
   section .skill {
     grid-template-columns: repeat(2, 200px);
     gap: 1.8rem;
@@ -905,6 +922,22 @@ footer {
   }
 }
 @media (max-width: 690px) {
+  .section-title-01 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.1;
+    text-align: center;
+  }
+  .section-title-02 {
+    font-size: 2rem;
+    transform: translateY(-80px);
+    text-align: center;
+    color: #264143;
+  }
   .max-width {
     padding: 0 23px;
   }
