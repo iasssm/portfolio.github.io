@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 :root {
   /* main colors */
   --main-color: #ff3b3f;
@@ -130,11 +131,13 @@ img {
 }
 .navbar .logo a {
   color: #264143;
+
   font-size: 40px;
   font-weight: 300;
   /* font-family: 'Ceviche One', cursive; */
-  src: url(Camar.otf);
-  font-family: 'Camar';
+  /* src: url(Camar.otf);
+  font-family: 'Camar'; */
+  font-family: 'Playfair Display SC', serif;
 }
 .navbar .menu li {
   list-style: none;
@@ -182,9 +185,10 @@ img {
 .header {
   margin: 80px 0;
   z-index: 2 !important;
+  margin-left: 70px;
 }
 .header .header-container h1 {
-  font-size: 4vw;
+  font-size: 3.8vw;
   margin-left: 30px;
 }
 .max-width {
@@ -205,7 +209,7 @@ img {
 .home-title {
   src: url(DAMN.ttf);
   font-family: 'Damn';
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 600;
   margin-left: 10px;
   margin-bottom: 28px;
@@ -222,7 +226,7 @@ img {
   text-transform: uppercase;
   color: #ff3b3f;
   font-family: 'Oooh Baby', cursive, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /*Buttons styling*/
@@ -236,7 +240,6 @@ img {
   background: var(--main-color);
   padding: 10px 20px;
   border-radius: 5%;
-  border: 2px solid var(--main-color);
   transform: translate(0%, 10%);
   background: none;
   border: 1px solid var(--main-color);
@@ -247,6 +250,7 @@ img {
   overflow: hidden;
   margin-left: 10px;
   z-index: -9999;
+  margin-left: -2px;
 }
 .button:focus,
 .send-btn:focus {
@@ -416,6 +420,7 @@ section .skill {
   color: var(--main);
   text-align: center;
   text-transform: capitalize;
+  color: #9932cc;
 }
 
 .set .list {
@@ -424,6 +429,9 @@ section .skill {
   grid-template-columns: 1fr 28px;
   color: var(--light);
   text-transform: uppercase;
+}
+.c {
+  font-size: 13px;
 }
 .set:hover .list {
   color: var(--text);
@@ -473,6 +481,9 @@ section .skills {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-5);
+  margin-bottom: 7px;
+  margin-top: 7px;
+  color: #32174d;
 }
 .project-button {
   color: var(--main-color);
@@ -547,6 +558,7 @@ section .skills {
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
+  color: #32174d;
 }
 .details-description {
   font-size: var(--small-font-size);
@@ -630,6 +642,7 @@ section .skills {
   flex-direction: column;
   font-weight: 300;
 }
+
 .contactForm {
   width: 40%;
   padding: 40px;
@@ -1089,8 +1102,8 @@ footer {
       to bottom,
       #efefef,
       #dde6f0,
-      #c1e1e9,
-      #abdbd3,
+      #b39bf4,
+      #b39bf4,
       #acd1af
     );
   }
@@ -1157,6 +1170,10 @@ footer {
   .home .home-content .text-3 {
     font-size: 27px;
   }
+  .header .header-container h1 {
+    font-size: 5vw;
+    margin-left: -10px;
+  }
 }
 @media screen and (min-width: 690px) {
   .skill {
@@ -1166,5 +1183,8 @@ footer {
 @media screen and (max-width: 690px) {
   .skill {
     grid-template-columns: 1fr;
+  }
+  .header .header-container h1 {
+    margin-left: -10px;
   }
 }
