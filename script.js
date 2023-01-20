@@ -190,3 +190,14 @@ $(document).ready(function () {
     $('.menu-btn i').toggleClass('active');
   });
 });
+
+///////////////
+document.addEventListener('scroll', () => {
+  const header = document.querySelector('nav');
+
+  if (window.scrollY > 600) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
